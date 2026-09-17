@@ -1,0 +1,9 @@
+source;share/ece470labs/hook/pythonpath.ps1
+source;share/ece470labs/hook/pythonpath.dsv
+source;share/ece470labs/hook/pythonpath.sh
+source;share/ece470labs/hook/ament_prefix_path.ps1
+source;share/ece470labs/hook/ament_prefix_path.dsv
+source;share/ece470labs/hook/ament_prefix_path.sh
+source;../../build/ece470labs/share/ece470labs/hook/pythonpath_develop.ps1
+source;../../build/ece470labs/share/ece470labs/hook/pythonpath_develop.dsv
+source;../../build/ece470labs/share/ece470labs/hook/pythonpath_develop.sh

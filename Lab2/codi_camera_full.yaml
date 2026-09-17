@@ -1,0 +1,36 @@
+/v4l2_camera:
+  ros__parameters:
+    auto_exposure: 3
+    backlight_compensation: 0
+    brightness: 0
+    camera_frame_id: camera
+    contrast: 32
+    exposure_time_absolute: 166
+    focus_automatic_continuous: false
+    focus_absolute: 10
+    gamma: 150
+    hue: -78
+    image_raw:
+      enable_pub_plugins:
+      - image_transport/raw
+    image_size:
+    - 640
+    - 480
+    output_encoding: rgb8
+    pixel_format: YUYV
+    power_line_frequency: 2
+    qos_overrides:
+      /parameter_events:
+        publisher:
+          depth: 1000
+          durability: volatile
+          history: keep_last
+          reliability: reliable
+    saturation: 53
+    sharpness: 2
+    start_type_description_service: true
+    use_sim_time: false
+    video_device: /dev/video0
+    white_balance_automatic: true
+    white_balance_temperature: 4600
+

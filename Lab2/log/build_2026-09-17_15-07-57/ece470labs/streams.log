@@ -1,0 +1,27 @@
+[1.204s] Invoking command in '/home/sahilss2/Desktop/ECE470Labs/Lab2/build/ece470labs': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sahilss2/Desktop/ECE470Labs/Lab2/build/ece470labs/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sahilss2/Desktop/ECE470Labs/Lab2/install/ece470labs/lib/python3.12/site-packages: /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sahilss2/Desktop/ECE470Labs/Lab2/build/ece470labs/build --no-deps symlink_data
+[1.573s] running develop
+[1.678s] running egg_info
+[1.678s] creating ece470labs.egg-info
+[1.688s] writing ece470labs.egg-info/PKG-INFO
+[1.688s] writing dependency_links to ece470labs.egg-info/dependency_links.txt
+[1.689s] writing entry points to ece470labs.egg-info/entry_points.txt
+[1.689s] writing requirements to ece470labs.egg-info/requires.txt
+[1.689s] writing top-level names to ece470labs.egg-info/top_level.txt
+[1.689s] writing manifest file 'ece470labs.egg-info/SOURCES.txt'
+[1.715s] reading manifest file 'ece470labs.egg-info/SOURCES.txt'
+[1.715s] writing manifest file 'ece470labs.egg-info/SOURCES.txt'
+[1.737s] running build_ext
+[1.737s] Creating /home/sahilss2/Desktop/ECE470Labs/Lab2/install/ece470labs/lib/python3.12/site-packages/ece470labs.egg-link (link to .)
+[1.737s] Installing lab2_exec script to /home/sahilss2/Desktop/ECE470Labs/Lab2/install/ece470labs/lib/ece470labs
+[1.738s] Installing lab3_exec script to /home/sahilss2/Desktop/ECE470Labs/Lab2/install/ece470labs/lib/ece470labs
+[1.738s] Installing lab4_exec script to /home/sahilss2/Desktop/ECE470Labs/Lab2/install/ece470labs/lib/ece470labs
+[1.738s] Installing lab5_exec script to /home/sahilss2/Desktop/ECE470Labs/Lab2/install/ece470labs/lib/ece470labs
+[1.738s] 
+[1.738s] Installed /home/sahilss2/Desktop/ECE470Labs/Lab2/build/ece470labs
+[1.738s] running symlink_data
+[1.738s] creating /home/sahilss2/Desktop/ECE470Labs/Lab2/install/ece470labs/share/ament_index
+[1.738s] creating /home/sahilss2/Desktop/ECE470Labs/Lab2/install/ece470labs/share/ament_index/resource_index
+[1.739s] creating /home/sahilss2/Desktop/ECE470Labs/Lab2/install/ece470labs/share/ament_index/resource_index/packages
+[1.739s] symbolically linking /home/sahilss2/Desktop/ECE470Labs/Lab2/build/ece470labs/resource/ece470labs -> /home/sahilss2/Desktop/ECE470Labs/Lab2/install/ece470labs/share/ament_index/resource_index/packages
+[1.739s] symbolically linking /home/sahilss2/Desktop/ECE470Labs/Lab2/build/ece470labs/package.xml -> /home/sahilss2/Desktop/ECE470Labs/Lab2/install/ece470labs/share/ece470labs
+[1.770s] Invoked command in '/home/sahilss2/Desktop/ECE470Labs/Lab2/build/ece470labs' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sahilss2/Desktop/ECE470Labs/Lab2/build/ece470labs/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sahilss2/Desktop/ECE470Labs/Lab2/install/ece470labs/lib/python3.12/site-packages: /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sahilss2/Desktop/ECE470Labs/Lab2/build/ece470labs/build --no-deps symlink_data
