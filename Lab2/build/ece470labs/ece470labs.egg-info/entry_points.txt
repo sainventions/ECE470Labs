@@ -1,0 +1,5 @@
+[console_scripts]
+lab2_exec = ece470labs.lab2_exec:main
+lab3_exec = ece470labs.lab3_exec:main
+lab4_exec = ece470labs.lab4_exec:main
+lab5_exec = ece470labs.lab5_exec:main
