@@ -77,7 +77,7 @@ def lab_fk(theta1, theta2, theta3, theta4, theta5, theta6):
     print("Foward kinematics calculated:\n")
 
     # =================== Your code starts here ====================#
-    M , S = Get_MS()
+    M, S = Get_MS()
     S1 = screw_to_matrix(S, 0)
     S2 = screw_to_matrix(S, 1)
     S3 = screw_to_matrix(S, 2)
@@ -85,7 +85,8 @@ def lab_fk(theta1, theta2, theta3, theta4, theta5, theta6):
     S5 = screw_to_matrix(S, 4)
     S6 = screw_to_matrix(S, 5)
 
-    T = expm(S1*theta1) @ expm(S2*theta2) @ expm(S3*theta3) @ expm(S4*theta4) @ expm(S5*theta5) @ expm(S6*theta6) @ M
+    T = expm(S1*theta1) @ expm(S2*theta2) @ expm(S3*theta3) @ expm(S4 *
+                                                                   theta4) @ expm(S5*theta5) @ expm(S6*theta6) @ M
     # ==============================================================#
 
     print(str(T) + "\n")
@@ -106,13 +107,43 @@ Function that calculates an elbow up Inverse Kinematic solution for the UR3
 
 def lab_invk(xWgrip, yWgrip, zWgrip, yaw_WgripDegree):
     # =================== Your code starts here ====================#
+    L1, L3, L5 = 0.152, 0.244, 0.213
+    L7, L8, L9, L10 = 0.085, 0.092, 0.0535, 0.059
+    L_off = 0.120 - 0.093 + 0.104
 
-    theta1 = 0.0
-    theta2 = 0.0
-    theta3 = 0.0
-    theta4 = 0.0
-    theta5 = 0.0
-    theta6 = 0.0
+    # 1
+    yaw = np.radians(yaw_WgripDegree)
+    xgrip = xWgrip + 0.150
+    ygrip = yWgrip - 0.150
+    zgrip = zWgrip - 0.150
+
+    # 2
+    xcen = xgrip - L9 * np.cos(yaw)
+    ycen = ygrip - L9 * np.sin(yaw)
+    zcen = zgrip
+
+    # 3
+    theta1 = np.arctan2(ycen, xcen) - np.arcsin(L_off / np.sqrt(xcen**2 + ycen**2))
+
+    # 4
+    theta6 = theta1 - yaw + pi/2
+    theta6 = (theta6 + pi) % (2*pi) - pi
+
+    # 5
+    x3end = xcen - L7 * np.cos(theta1) + L_off * np.sin(theta1)
+    y3end = ycen - L7 * np.sin(theta1) - L_off * np.cos(theta1)
+    z3end = zcen + L8 + L10
+
+    # 6
+    r = np.sqrt(x3end**2 + y3end**2)
+    h = z3end - L1
+    d = np.sqrt(r**2 + h**2)
+
+    #7
+    theta2 = -(np.arctan(h,r)+np.arccos((L3**2 + d**2 - L5**2) / (2*L3*d)))
+    theta3 = pi - np.arccos((L3**2 - d**2 + L5**2) / (2*L3*L5))
+    theta4 = -theta2 - theta3
+    theta5 = - pi/2
 
     # ==============================================================#
     return lab_fk(theta1, theta2, theta3, theta4, theta5, theta6)
