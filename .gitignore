@@ -1,0 +1,23 @@
+# colcon / ROS 2 build output (regenerate with: colcon build --symlink-install)
+build/
+install/
+log/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Editors / OS
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Synology Drive
+@eaDir/
+*.SynologyWorkingDirectory
