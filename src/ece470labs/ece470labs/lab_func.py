@@ -115,7 +115,7 @@ def lab_invk(xWgrip, yWgrip, zWgrip, yaw_WgripDegree):
     yaw = np.radians(yaw_WgripDegree)
     xgrip = xWgrip + 0.150
     ygrip = yWgrip - 0.150
-    zgrip = zWgrip - 0.150
+    zgrip = zWgrip - 0.010
 
     # 2
     xcen = xgrip - L9 * np.cos(yaw)

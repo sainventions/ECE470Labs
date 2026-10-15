@@ -1,0 +1,42 @@
+sahilss2@eceb-3071-l08:~/Desktop/ECE470Labs$ ros2 run ece470labs lab4_exec 0.18 -0.1 0.06 -45
+Check if the UR3e is in 'Remote' Mode?
+    Check if the UR3e is initialized and in 'Normal' state.
+    Have you run the ROS2 launch statement?
+    If there was an UR3e emergency stop or error, Ctrl-C the ros2 launch and rerun.
+    
+    Press <Enter> to Continue.
+[WARN] [1792097557.479920210] [ur3e]: IO service not available, waiting...
+[INFO] [1792097557.981438742] [ur3e]: Waiting for initial state updates...
+
+xWgrip: 0.18, yWgrip: -0.1, zWgrip: 0.06, yaw_WgripDegree: -45
+
+Foward kinematics calculated:
+
+[[ 7.07106781e-01  7.07106781e-01  8.71335288e-18  1.80000000e-01]
+ [-7.07106781e-01  7.07106781e-01 -4.81298928e-17 -1.00000000e-01]
+ [-1.08404403e-16  2.35545299e-17  1.00000000e+00  6.00000000e-02]
+ [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]
+
+[INFO] [1792097558.484451977] [ur3e]: Moving to position: [ 122.74110329  -61.35864394  112.19283558 -140.83419165  -90.
+   77.74110329]
+sahilss2@eceb-3071-l08:~/Desktop/ECE470Labs$ ros2 run ece470labs lab4_exec 0.27 0.33 0.23 90
+Check if the UR3e is in 'Remote' Mode?
+    Check if the UR3e is initialized and in 'Normal' state.
+    Have you run the ROS2 launch statement?
+    If there was an UR3e emergency stop or error, Ctrl-C the ros2 launch and rerun.
+    
+    Press <Enter> to Continue.
+[WARN] [1792097616.254220549] [ur3e]: IO service not available, waiting...
+[INFO] [1792097616.756335894] [ur3e]: Waiting for initial state updates...
+
+xWgrip: 0.27, yWgrip: 0.33, zWgrip: 0.23, yaw_WgripDegree: 90
+
+Foward kinematics calculated:
+
+[[-1.10297070e-16 -1.00000000e+00  1.73739201e-16  2.70000000e-01]
+ [ 1.00000000e+00 -1.13475866e-16 -2.53648046e-18  3.30000000e-01]
+ [ 1.64164095e-18  1.52963382e-16  1.00000000e+00  2.30000000e-01]
+ [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]
+
+[INFO] [1792097617.259793284] [ur3e]: Moving to position: [179.38511109 -60.34319423  58.46989844 -88.12670421 -90.
+  -0.61488891]
