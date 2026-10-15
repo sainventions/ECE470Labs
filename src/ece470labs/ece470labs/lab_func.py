@@ -140,7 +140,7 @@ def lab_invk(xWgrip, yWgrip, zWgrip, yaw_WgripDegree):
     d = np.sqrt(r**2 + h**2)
 
     #7
-    theta2 = -(np.arctan(h,r)+np.arccos((L3**2 + d**2 - L5**2) / (2*L3*d)))
+    theta2 = -(np.arctan2(h,r)+np.arccos((L3**2 + d**2 - L5**2) / (2*L3*d)))
     theta3 = pi - np.arccos((L3**2 - d**2 + L5**2) / (2*L3*L5))
     theta4 = -theta2 - theta3
     theta5 = - pi/2
